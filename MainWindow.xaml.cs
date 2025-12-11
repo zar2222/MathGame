@@ -6,6 +6,7 @@ using System.Windows.Threading;
 namespace MathGame
 {
 	// мега игра от Михаила
+	// версия 0.0.4
 	public partial class MainWindow : Window
 	{
 		DispatcherTimer timer = new DispatcherTimer();
