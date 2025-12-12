@@ -22,9 +22,19 @@ namespace MathGame
 			timer.Interval = TimeSpan.FromSeconds(.1);
 			timer.Tick += Timer_Tick;
 			SetUpGame();
+			this.Loaded += (s, e) => this.Focus();
 
+			// Обработка клавиш для всего окна
+			this.PreviewKeyDown += (s, e) =>
+			{
+				if (e.Key == Key.R)
+				{
+					SetUpGame();
+				}
+			};
 
 		}
+
 		
 		private void Timer_Tick(object sender, EventArgs e)
 		{
@@ -132,7 +142,6 @@ namespace MathGame
 
 
 		}
-
 
 		
 	}
