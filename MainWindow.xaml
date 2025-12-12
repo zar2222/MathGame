@@ -47,7 +47,7 @@
             Text="0"
             FontSize="20" Grid.Column="3" Grid.RowSpan="2" Grid.Row="1" TextWrapping="Wrap"
             />
-        <TextBlock Grid.Column="3" HorizontalAlignment="Left" Margin="224,98,0,0" Grid.Row="3" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" KeyDown="TextBlock_KeyDown"/>
+        
 
 
 

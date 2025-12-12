@@ -6,7 +6,7 @@ using System.Windows.Threading;
 namespace MathGame
 {
 	// мега игра от Михаила
-	// версия 0.0.4
+	// версия 0.0.5
 	public partial class MainWindow : Window
 	{
 		DispatcherTimer timer = new DispatcherTimer();
@@ -24,11 +24,13 @@ namespace MathGame
 			SetUpGame();
 			this.Loaded += (s, e) => this.Focus();
 
-			// Обработка клавиш для всего окна
+			
 			this.PreviewKeyDown += (s, e) =>
 			{
 				if (e.Key == Key.R)
 				{
+					timer.Stop();
+					timeTextBlock.Text = "0";
 					SetUpGame();
 				}
 			};
